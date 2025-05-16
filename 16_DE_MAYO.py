@@ -43,51 +43,120 @@ while True:
         3. Mini juego
         4. Salir
         ''')
-    op=int(input("Menu de opciones: "))
+    op=int(input("Opción: "))
 
-    match op:
-       case 1: 
-          print("Calculadora")
-          while True: 
-         print('''
-            1. Suma
-            2. Resta
-            3. Multiplicar
-            4. Dividir
-            5. Potencia
-            6. Salir
-            ''') 
-    op_calculadora=int(input("Seleccione una opción: "))
-        match op:
+    match op: 
         case 1:
-            print("Suma")
-            suma()
+            print("Que necesita calcular?")
+    # # solucionar
+    # while True:
+    #     print('''
+    #     1. Suma
+    #     2. Resta
+    #     3. Multiplicar
+    #     4. Dividir
+    #     5. Potencia
+    #     6. Salir
+    #     ''') 
+    #     op=int(input("Seleccione una opción: "))
+
+    #     match op:
+    #     case 1:
+    #         print("Suma")
+    #         suma()
+
+    #     case B:
+    #         print("Resta")
+    #         resta ()
+
+    #     case 3:
+    #         print("Multiplicar")
+    #         multiplicación()
+        
+    #     case 4:
+    #         print("Dividir")
+    #         división()
+
+    #     case 5:
+    #         print("Potencia")
+    #         potencia()
+        
+    #     case 6:
+    #         print("Bye bye")
+    #         break
+    #     case _:
+    #     print("Opción no valida")
 
         case 2:
-            print("Resta")
-            resta ()
+          print("Estas listo para adivinar?")
 
         case 3:
-            print("Multiplicar")
-            multiplicación()
-        
-        case 4:
-            print("Dividir")
-            división()
+          print("Esta bien, ahora que comience el juego")
 
-        case 5:
-            print("Potencia")
-            potencia()
+        case 4:
+          print("Hasta la próxima")
+          break
         
-        case 6:
-            print("Bye bye")
-            break
         case _:
-        print("Opción no valida")
-       case 2: print("Adivinanza")
-       case 3: print("Mini juego")
-       case 4: print("Bye bye")
-       case _: print("Opción no valida")
+            print("Opción no valida, intente de nuevo")
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+# match op:
+#        case 1: 
+#           print("Calculadora")
+#           while True: 
+#          print('''
+#             1. Suma
+#             2. Resta
+#             3. Multiplicar
+#             4. Dividir
+#             5. Potencia
+#             6. Salir
+#             ''') 
+#     op_calculadora=int(input("Seleccione una opción: "))
+#         match op:
+#         case 1:
+#             print("Suma")
+#             suma()
+
+#         case 2:
+#             print("Resta")
+#             resta ()
+
+#         case 3:
+#             print("Multiplicar")
+#             multiplicación()
+        
+#         case 4:
+#             print("Dividir")
+#             división()
+
+#         case 5:
+#             print("Potencia")
+#             potencia()
+        
+#         case 6:
+#             print("Bye bye")
+#             break
+#         case _:
+          
+#         print("Opción no valida")
+#        case 2: print("Adivinanza")
+#        case 3: print("Mini juego")
+#        case 4: print("Bye bye")
+#        case _: print("Opción no valida")
        
 
 
