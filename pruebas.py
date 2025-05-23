@@ -1,12 +1,12 @@
 #Ejercicios de for 
 
-#Perros de caza
+# Perros de caza
 # Pida al usuario la cantidad de perros
 # Muestre cual es la cuota minima de conejos
 # luego consulte cuantos conejos trajo
 # si el perro trajo la cantidad minima
-#cumplio la cuota, sino, se queda sin filete
-#mostrar resumen de perro que cumplieron y los que no
+# cumplio la cuota, sino, se queda sin filete
+# mostrar resumen de perro que cumplieron y los que no
 # conejos debe ser con comando random con valor entre 1 y 10 (En linea 20)
 
 #Ejercicio 1
