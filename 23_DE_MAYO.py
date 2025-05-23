@@ -1,3 +1,5 @@
+# Ejercicio 1
+
 # cantArt=0
 # total=0
 
@@ -30,6 +32,8 @@
 #             break
 #         case _:
 
+#############################################################################################################################
+
 # Ejercicio 2
 
 # 1. Pago de Tarjeta de Crédito:
@@ -56,16 +60,70 @@
 # a. Se utilizan bloques try y except para manejar posibles errores al
 # ingresar datos, validar valores no numéricos y errores inesperados.
 
-print("Bienvenido al sistema de pago de tarjeta de crédito")
-print("Su saldo inicial es de $100.000")
-saldo=100000
+
+# print("Bienvenido al sistema de pago de tarjeta de crédito")
+# print("Su saldo inicial es de $100.000")
+# saldo=100000
+# while True:
+#     while True: 
+#         print('''
+#               Seleccione una opción:
+#               1. Realizar un pago
+#               2. Simular compras
+#               3. Salir
+#               ''')
+#         op=int(input())
+#         break
+#     match op:
+#         case 1:
+#             while True:
+#                 try: 
+#                     pago=int(input("Ingrese el monto a pagar: "))
+#                     if pago<0:
+#                         print("El monto a pagar no puede ser negativo")
+#                         continue
+#                     if pago>saldo:
+#                         print("El monto a pagar no puede exceder el saldo actual")
+#                         continue
+#                     saldo-=pago
+#                     print(f"Pago realizado. Su nuevo saldo es de ${saldo}")
+#                     break
+#                 except Exception:
+#                     print("Ingrese un monto válido")
+#         case 2:
+#              while True:
+#                 try: 
+#                     compras=int(input("Ingrese el monto de la compra: "))
+#                     if compras<0:
+#                         print("El monto de la compra no puede ser negativo")
+#                         continue
+#                     saldo-=compras
+#                     print(f"Compra realizada. Su nuevo saldo es de ${saldo}")
+#                     break
+#                 except Exception:
+#                     print("Ingrese un monto válido")
+#         case 3:
+#             print("Saliendo del sistema...")
+#             break
+#         case _:
+#             print("Opción no válida. Intente nuevamente.")
+
+# Mejorar en crear usuario (opcional), tambien agregar menu de comnpras (No estoy seguro si es necesario)
+
+#############################################################################################################################
+
+# Ejercicio 3 (EVALUACIÓN FORMATIVA)
+
+print("Bienvenido a nuestra tienda de sushi")
+
 while True:
     while True: 
         print('''
-              Seleccione una opción:
-              1. Realizar un pago
-              2. Simular compras
-              3. Salir
+              Seleccione nuestras siguientes opciones:
+              1. Registrar cliente
+              2. Loggin
+              3. Compras de sushi
+              4. Salir
               ''')
         op=int(input())
         break
@@ -73,19 +131,20 @@ while True:
         case 1:
             while True:
                 try: 
-                    pago=int(input("Ingrese el monto a pagar: "))
-                    if pago<0:
-                        print("El monto a pagar no puede ser negativo")
-                        continue
-                    if pago>saldo:
-                        print("El monto a pagar no puede exceder el saldo actual")
-                        continue
-                    saldo-=pago
-                    print(f"Pago realizado. Su nuevo saldo es de ${saldo}")
+                    nombre=input("Ingrese su nombre: ")
+                    if len(nombre):
+                     continue
                     break
                 except Exception:
-                    print("Ingrese un monto válido")
-        case 2:
-                        while True:
-                            try:
-                                 
+                    print("Ingrese un nombre válido")
+            
+            while True:
+                try: 
+                    apellido=input("Ingrese su apellido: ")
+                    if len(apellido):
+                     continue
+                    break
+                except Exception:
+                    print("Ingrese un apellido válido")
+
+# Resolver en la mojo dojo house
