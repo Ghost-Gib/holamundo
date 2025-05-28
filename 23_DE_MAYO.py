@@ -117,7 +117,7 @@
 print("Bienvenido a nuestra tienda de sushi")
 
 while True:
-    while True: 
+    while True:
         print('''
               Seleccione nuestras siguientes opciones:
               1. Registrar cliente
@@ -125,26 +125,24 @@ while True:
               3. Compras de sushi
               4. Salir
               ''')
-        op=int(input())
+        op = int(input())
         break
+
     match op:
         case 1:
             while True:
-                try: 
-                    nombre=input("Ingrese su nombre: ")
-                    if len(nombre):
-                     continue
+                nombre = input("Ingrese su nombre: ")
+                if nombre.isalpha():
                     break
-                except Exception:
-                    print("Ingrese un nombre válido")
-            
+                else:
+                    print("El nombre solo debe contener letras. Intente de nuevo.")
+
             while True:
-                try: 
-                    apellido=input("Ingrese su apellido: ")
-                    if len(apellido):
-                     continue
+                apellido = input("Ingrese su apellido: ")
+                if apellido.isalpha():
                     break
-                except Exception:
-                    print("Ingrese un apellido válido")
+                else:
+                    print("El apellido solo debe contener letras. Intente de nuevo.")
+
 
 # Resolver en la mojo dojo house
