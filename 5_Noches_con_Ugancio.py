@@ -203,6 +203,9 @@ while True:
                 Precio total = {total}
                 ''')
         
+        elif op == 7:
+                print ("Saliendo del sistema...")
+                break
         while op == 6:
                 desc=str(input("Ingrese codigo de descuento: "))
                 if desc == "soyotaku":
@@ -210,12 +213,14 @@ while True:
                         print (f"Su codigo se aplico correctamente, ahora con su descuento su codigo es: {total}")
                 else:
                         print ("código no válido")
-                        desc = int(input("Desea volver a intentarlo?"))
-                        print (''' 
+                        desc = str(input('''Desea volver a intentarlo?
                         1. Si
-                        2. No ''')
-                        if desc == 1:
-                                op == 5
-                        else: 
-                                break
+                        2. No 
+                        '''))
+
+                        if desc == "Si":
+                                op == 6
+                        elif desc == "No":
+                            print ("Entoncecs volvera al MENU PRINCIPAL...")
+                            break
                         
